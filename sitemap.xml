@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- صفحه اصلی -->
+  <url>
+    <loc>https://radinsdg.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- صفحات داخل پوشه pages (طبق عکس دوم) -->
+  <url><loc>https://radinsdg.github.io/pages/challenges.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challc.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challjs.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challpy.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challscratch.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challweb.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/courses.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/downloads.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/help.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/login.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/notFoundPage.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/profile.html</loc></url>
+
+  <!-- صفحات داخل پوشه challenges (طبق عکس اول) -->
+  <url><loc>https://radinsdg.github.io/pages/challenges/calc-ui.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/cat-mouse-game.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/digital-clock.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/fibonacci.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/fibonacci-c.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/gpa.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/gpa-c.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/guess-number.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/guess-number-c.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/interactive-story.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/js-calculator.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/js-guess-number.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/landing-page.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/product-page.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/profile-page.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/scratch-calculator.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/scratch-guess-number.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/shomarandeh.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/shomarandeh-c.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/signup-form.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/simple-calculator.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/simple-calculator-c.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/todo-list.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/unit-converter.html</loc></url>
+  <url><loc>https://radinsdg.github.io/pages/challenges/walk-animation.html</loc></url>
+</urlset>
