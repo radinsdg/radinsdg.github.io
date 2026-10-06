@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>ماشین حساب ساده در C | چالش های زبان سی | رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../../index.html">خانه</a>
+            <a href="../courses.html">دوره ها</a>
+            <a href="../downloads.html">دانلود ها</a>
+            <a href="../login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>ماشین حساب ساده در C</h1>
+        </div>
+    </header>
+    <main>
+        <p class="breadcrumb">
+            <a href="../challanges.html">چالش ها</a> /
+            <a href="../challc.html">زبان سی</a> /
+            ماشین حساب ساده در C
+        </p>
+
+        <div class="chall-hero">
+            <h1>ماشین حساب ساده در C</h1>
+            <div class="badges">
+                <span class="badge badge-cat">زبان سی</span>
+                <span class="badge badge-diff-easy">سطح: ساده</span>
+            </div>
+            <p>برنامه‌ای در C بنویس که دو عدد اعشاری و یک عملگر از کاربر بگیرد (با scanf) و نتیجه را با printf چاپ کند.</p>
+            <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">ورودی/خروجی</span>
+            <span class="tag">switch</span>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>هدف از این چالش</h2>
+            <ul class="obj-list">
+                <li>کار با scanf و printf</li>
+                <li>متغیرهای float و char</li>
+                <li>دستور switch</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>شرایط و ملزومات</h2>
+            <ul class="req-list">
+                <li>دریافت دو عدد float</li>
+                <li>دریافت عملگر به صورت یک کاراکتر</li>
+                <li>استفاده از switch برای انتخاب عملیات</li>
+                <li>بررسی تقسیم بر صفر</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>نمونه ورودی و خروجی</h2>
+            <div class="io-grid">
+                <div>
+                    <h4>ورودی نمونه</h4>
+                    <pre class="code-block">12.0
+4.0
+/</pre>
+                </div>
+                <div>
+                    <h4>خروجی نمونه</h4>
+                    <pre class="code-block">نتیجه: 3.00</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>قالب شروع</h2>
+            <p>می‌تونی با این قالب شروع کنی و ادامه‌اش بدی:</p>
+            <pre class="code-block">#include <stdio.h>
+
+int main() {
+    float a, b, result;
+    char op;
+
+    // ادامه‌ی کد خودت رو اینجا بنویس
+
+    return 0;
+}
+</pre>
+        </div>
+
+        <div class="section-card">
+            <h2>راهنمایی‌ها</h2>
+                <details class="hint-item"><summary>راهنمایی 1</summary><p>برای خواندن یک کاراکتر از " %c" با فاصله قبل از % استفاده کن تا کاراکتر جدید خط قبلی نادیده گرفته شود</p></details>
+                <details class="hint-item"><summary>راهنمایی 2</summary><p>از %.2f برای چاپ دو رقم اعشار استفاده کن</p></details>
+        </div>
+
+        <div class="section-card">
+            <h2>چالش جایزه (اختیاری)</h2>
+            <p class="bonus-box">برنامه را در یک حلقه‌ی do-while قرار بده تا کاربر بتواند چند بار پشت سر هم محاسبه کند.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>ارسال نتیجه</h2>
+            <p>
+                کد یا فایل خروجی چالش رو حل کن، سپس لینک یا توضیح کار خودت رو برای ما
+                در بخش پیام صفحه‌ی اصلی ارسال کن تا بررسی کنیم و بازخورد بدیم.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary" href="../../index.html#send-comment">ارسال نتیجه</a>
+                <a class="btn btn-secondary" href="../challc.html">بازگشت به چالش‌های زبان سی</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="../help.html" class="helpus">حمایت از ما</a>
+    <a href="../challanges.html" class="challanges">چالش ها</a>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>پروفایل من | آموزش برنامه نویسی رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../index.html">خانه</a>
+            <a href="courses.html">دوره ها</a>
+            <a href="downloads.html">دانلود ها</a>
+            <a href="login.html" class="lg action">پروفایل من</a>
+        </nav>
+        <div>
+            <h1>پروفایل من</h1>
+        </div>
+    </header>
+    <main>
+        <div class="profile-card">
+            <div class="profile-avatar" id="avatar">ر</div>
+            <h2 id="profile-name">در حال بارگذاری...</h2>
+            <p class="teacher" id="profile-username"></p>
+            <div class="profile-info">
+                <p><span>ایمیل</span><span id="profile-email"></span></p>
+                <p><span>شناسه</span><span id="profile-id"></span></p>
+            </div>
+            <button class="btn logout-btn" onclick="logout()">خروج از حساب</button>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="help.html" class="helpus">حمایت از ما</a>
+    <a href="challanges.html" class="challanges">چالش ها</a>
+    <script src="../js/isLoggedIn.js"></script>
+    <script>
+        (function () {
+            const isLoggedIn = localStorage.getItem("isLoggedIn");
+            if (isLoggedIn !== "true") {
+                location.href = "login.html";
+                return;
+            }
+            const fname = localStorage.getItem("firstname") || "";
+            const lname = localStorage.getItem("lastname") || "";
+            const email = localStorage.getItem("email") || "";
+            const id = localStorage.getItem("id") || "";
+
+            document.getElementById("profile-name").innerText = (fname + " " + lname).trim();
+            document.getElementById("profile-username").innerText = "@" + id;
+            document.getElementById("profile-email").innerText = email;
+            document.getElementById("profile-id").innerText = id;
+            document.getElementById("avatar").innerText = fname ? fname[0] : "ر";
+        })();
+
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            localStorage.removeItem("firstname");
+            localStorage.removeItem("lastname");
+            localStorage.removeItem("id");
+            localStorage.removeItem("email");
+            localStorage.removeItem("password");
+            location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>

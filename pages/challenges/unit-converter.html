@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>تبدیل واحد آنلاین | چالش های جاوا اسکریپت | رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../../index.html">خانه</a>
+            <a href="../courses.html">دوره ها</a>
+            <a href="../downloads.html">دانلود ها</a>
+            <a href="../login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>تبدیل واحد آنلاین</h1>
+        </div>
+    </header>
+    <main>
+        <p class="breadcrumb">
+            <a href="../challanges.html">چالش ها</a> /
+            <a href="../challjs.html">جاوا اسکریپت</a> /
+            تبدیل واحد آنلاین
+        </p>
+
+        <div class="chall-hero">
+            <h1>تبدیل واحد آنلاین</h1>
+            <div class="badges">
+                <span class="badge badge-cat">جاوا اسکریپت</span>
+                <span class="badge badge-diff-hard">سطح: سخت</span>
+            </div>
+            <p>ابزاری بساز که بین چند واحد اندازه‌گیری (مثلاً سانتی‌متر به متر، کیلوگرم به گرم، سلسیوس به فارنهایت) تبدیل انجام دهد.</p>
+            <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Math</span>
+            <span class="tag">Form</span>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>هدف از این چالش</h2>
+            <ul class="obj-list">
+                <li>کار با select و option</li>
+                <li>توابع تبدیل ریاضی</li>
+                <li>به‌روزرسانی نتیجه هنگام تغییر ورودی (رویداد input/change)</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>شرایط و ملزومات</h2>
+            <ul class="req-list">
+                <li>انتخاب نوع تبدیل از یک منوی کشویی</li>
+                <li>فیلد ورودی عدد</li>
+                <li>نمایش خودکار نتیجه بدون نیاز به دکمه (هنگام تایپ)</li>
+                <li>پشتیبانی از حداقل سه نوع تبدیل</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>نمونه ورودی و خروجی</h2>
+            <div class="io-grid">
+                <div>
+                    <h4>ورودی نمونه</h4>
+                    <pre class="code-block">100 سانتی‌متر</pre>
+                </div>
+                <div>
+                    <h4>خروجی نمونه</h4>
+                    <pre class="code-block">1 متر</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>قالب شروع</h2>
+            <p>می‌تونی با این قالب شروع کنی و ادامه‌اش بدی:</p>
+            <pre class="code-block">const select = document.querySelector('#unit-type');
+const valueInput = document.querySelector('#value');
+
+// ادامه‌ی کد خودت رو اینجا بنویس
+</pre>
+        </div>
+
+        <div class="section-card">
+            <h2>راهنمایی‌ها</h2>
+                <details class="hint-item"><summary>راهنمایی 1</summary><p>برای هر نوع تبدیل یک تابع جدا بنویس تا کد تمیزتر باشد</p></details>
+                <details class="hint-item"><summary>راهنمایی 2</summary><p>از رویداد 'input' روی فیلد عدد استفاده کن تا نتیجه فوراً به‌روزرسانی شود</p></details>
+        </div>
+
+        <div class="section-card">
+            <h2>چالش جایزه (اختیاری)</h2>
+            <p class="bonus-box">به ابزار حافظه اضافه کن که آخرین تبدیل انجام‌شده را در localStorage نگه دارد.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>ارسال نتیجه</h2>
+            <p>
+                کد یا فایل خروجی چالش رو حل کن، سپس لینک یا توضیح کار خودت رو برای ما
+                در بخش پیام صفحه‌ی اصلی ارسال کن تا بررسی کنیم و بازخورد بدیم.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary" href="../../index.html#send-comment">ارسال نتیجه</a>
+                <a class="btn btn-secondary" href="../challjs.html">بازگشت به چالش‌های جاوا اسکریپت</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="../help.html" class="helpus">حمایت از ما</a>
+    <a href="../challanges.html" class="challanges">چالش ها</a>
+</body>
+</html>

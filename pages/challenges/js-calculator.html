@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>ماشین‌حساب وب | چالش های جاوا اسکریپت | رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../../index.html">خانه</a>
+            <a href="../courses.html">دوره ها</a>
+            <a href="../downloads.html">دانلود ها</a>
+            <a href="../login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>ماشین‌حساب وب</h1>
+        </div>
+    </header>
+    <main>
+        <p class="breadcrumb">
+            <a href="../challanges.html">چالش ها</a> /
+            <a href="../challjs.html">جاوا اسکریپت</a> /
+            ماشین‌حساب وب
+        </p>
+
+        <div class="chall-hero">
+            <h1>ماشین‌حساب وب</h1>
+            <div class="badges">
+                <span class="badge badge-cat">جاوا اسکریپت</span>
+                <span class="badge badge-diff-easy">سطح: ساده</span>
+            </div>
+            <p>یک ماشین‌حساب واقعی در مرورگر بساز که با کلیک روی دکمه‌ها عدد و عملگر وارد شود و نتیجه محاسبه و نمایش داده شود.</p>
+            <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">DOM</span>
+            <span class="tag">Event</span>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>هدف از این چالش</h2>
+            <ul class="obj-list">
+                <li>کار با document.querySelector</li>
+                <li>شنونده‌ی رویداد addEventListener</li>
+                <li>به‌روزرسانی محتوای صفحه (innerText/textContent)</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>شرایط و ملزومات</h2>
+            <ul class="req-list">
+                <li>دکمه‌های عددی ۰ تا ۹ و عملگرها</li>
+                <li>صفحه‌نمایش که ورودی و نتیجه را نشان دهد</li>
+                <li>دکمه‌ی مساوی (=) برای محاسبه</li>
+                <li>دکمه‌ی پاک کردن (C)</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>نمونه ورودی و خروجی</h2>
+            <div class="io-grid">
+                <div>
+                    <h4>ورودی نمونه</h4>
+                    <pre class="code-block">12 + 4 =</pre>
+                </div>
+                <div>
+                    <h4>خروجی نمونه</h4>
+                    <pre class="code-block">16</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>قالب شروع</h2>
+            <p>می‌تونی با این قالب شروع کنی و ادامه‌اش بدی:</p>
+            <pre class="code-block">const screen = document.querySelector('.screen');
+let current = '';
+
+// ادامه‌ی کد خودت رو اینجا بنویس
+</pre>
+        </div>
+
+        <div class="section-card">
+            <h2>راهنمایی‌ها</h2>
+                <details class="hint-item"><summary>راهنمایی 1</summary><p>مقدار صفحه‌نمایش را در یک متغیر رشته‌ای نگه دار و با هر کلیک به آن اضافه کن</p></details>
+                <details class="hint-item"><summary>راهنمایی 2</summary><p>برای محاسبه‌ی نهایی می‌تونی از eval() به‌صورت ساده استفاده کنی (فقط برای تمرین)</p></details>
+        </div>
+
+        <div class="section-card">
+            <h2>چالش جایزه (اختیاری)</h2>
+            <p class="bonus-box">قابلیت استفاده از صفحه‌کلید (Keyboard) برای وارد کردن اعداد و عملگرها اضافه کن.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>ارسال نتیجه</h2>
+            <p>
+                کد یا فایل خروجی چالش رو حل کن، سپس لینک یا توضیح کار خودت رو برای ما
+                در بخش پیام صفحه‌ی اصلی ارسال کن تا بررسی کنیم و بازخورد بدیم.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary" href="../../index.html#send-comment">ارسال نتیجه</a>
+                <a class="btn btn-secondary" href="../challjs.html">بازگشت به چالش‌های جاوا اسکریپت</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="../help.html" class="helpus">حمایت از ما</a>
+    <a href="../challanges.html" class="challanges">چالش ها</a>
+</body>
+</html>

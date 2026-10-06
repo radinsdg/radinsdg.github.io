@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>بازی حدس عدد در C | چالش های زبان سی | رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../../index.html">خانه</a>
+            <a href="../courses.html">دوره ها</a>
+            <a href="../downloads.html">دانلود ها</a>
+            <a href="../login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>بازی حدس عدد در C</h1>
+        </div>
+    </header>
+    <main>
+        <p class="breadcrumb">
+            <a href="../challanges.html">چالش ها</a> /
+            <a href="../challc.html">زبان سی</a> /
+            بازی حدس عدد در C
+        </p>
+
+        <div class="chall-hero">
+            <h1>بازی حدس عدد در C</h1>
+            <div class="badges">
+                <span class="badge badge-cat">زبان سی</span>
+                <span class="badge badge-diff-medium">سطح: متوسط</span>
+            </div>
+            <p>با استفاده از rand() یک عدد تصادفی بین ۱ تا ۱۰۰ تولید کن و در یک حلقه از کاربر بخواه آن را حدس بزند تا زمانی که درست حدس بزند.</p>
+            <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">حلقه</span>
+            <span class="tag">rand</span>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>هدف از این چالش</h2>
+            <ul class="obj-list">
+                <li>تابع rand() و srand()</li>
+                <li>حلقه‌ی while</li>
+                <li>شمارنده‌ی تلاش</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>شرایط و ملزومات</h2>
+            <ul class="req-list">
+                <li>تولید عدد تصادفی با srand(time(NULL))</li>
+                <li>دریافت حدس در حلقه</li>
+                <li>راهنمایی بزرگتر/کوچکتر بعد از هر حدس</li>
+                <li>چاپ تعداد تلاش‌ها در پایان</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>نمونه ورودی و خروجی</h2>
+            <div class="io-grid">
+                <div>
+                    <h4>ورودی نمونه</h4>
+                    <pre class="code-block">50
+75
+62</pre>
+                </div>
+                <div>
+                    <h4>خروجی نمونه</h4>
+                    <pre class="code-block">آفرین! تعداد تلاش: 3</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>قالب شروع</h2>
+            <p>می‌تونی با این قالب شروع کنی و ادامه‌اش بدی:</p>
+            <pre class="code-block">#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int number = rand() % 100 + 1;
+    int guess, attempts = 0;
+
+    // ادامه‌ی کد خودت رو اینجا بنویس
+
+    return 0;
+}
+</pre>
+        </div>
+
+        <div class="section-card">
+            <h2>راهنمایی‌ها</h2>
+                <details class="hint-item"><summary>راهنمایی 1</summary><p>برای بازه‌ی ۱ تا ۱۰۰ از rand() % 100 + 1 استفاده کن</p></details>
+                <details class="hint-item"><summary>راهنمایی 2</summary><p>srand(time(NULL)) را فقط یک‌بار در ابتدای main صدا بزن</p></details>
+        </div>
+
+        <div class="section-card">
+            <h2>چالش جایزه (اختیاری)</h2>
+            <p class="bonus-box">محدودیت ۷ تلاش اضافه کن و اگر کاربر نتوانست حدس بزند عدد درست را نشان بده.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>ارسال نتیجه</h2>
+            <p>
+                کد یا فایل خروجی چالش رو حل کن، سپس لینک یا توضیح کار خودت رو برای ما
+                در بخش پیام صفحه‌ی اصلی ارسال کن تا بررسی کنیم و بازخورد بدیم.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary" href="../../index.html#send-comment">ارسال نتیجه</a>
+                <a class="btn btn-secondary" href="../challc.html">بازگشت به چالش‌های زبان سی</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="../help.html" class="helpus">حمایت از ما</a>
+    <a href="../challanges.html" class="challanges">چالش ها</a>
+</body>
+</html>

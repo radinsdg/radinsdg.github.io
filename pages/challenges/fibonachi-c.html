@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>دنباله فیبوناچی در C | چالش های زبان سی | رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../../index.html">خانه</a>
+            <a href="../courses.html">دوره ها</a>
+            <a href="../downloads.html">دانلود ها</a>
+            <a href="../login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>دنباله فیبوناچی در C</h1>
+        </div>
+    </header>
+    <main>
+        <p class="breadcrumb">
+            <a href="../challanges.html">چالش ها</a> /
+            <a href="../challc.html">زبان سی</a> /
+            دنباله فیبوناچی در C
+        </p>
+
+        <div class="chall-hero">
+            <h1>دنباله فیبوناچی در C</h1>
+            <div class="badges">
+                <span class="badge badge-cat">زبان سی</span>
+                <span class="badge badge-diff-medium">سطح: متوسط</span>
+            </div>
+            <p>برنامه‌ای بنویس که تعداد جمله‌های دنباله فیبوناچی را از کاربر بگیرد و آن‌ها را با استفاده از حلقه چاپ کند.</p>
+            <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">دنباله</span>
+            <span class="tag">حلقه</span>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>هدف از این چالش</h2>
+            <ul class="obj-list">
+                <li>حلقه و متغیرهای کمکی</li>
+                <li>منطق دنباله‌ی تکراری (iterative)</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>شرایط و ملزومات</h2>
+            <ul class="req-list">
+                <li>دریافت تعداد جمله از کاربر</li>
+                <li>تولید دنباله با شروع از 0 و 1</li>
+                <li>چاپ دنباله در یک خط</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>نمونه ورودی و خروجی</h2>
+            <div class="io-grid">
+                <div>
+                    <h4>ورودی نمونه</h4>
+                    <pre class="code-block">8</pre>
+                </div>
+                <div>
+                    <h4>خروجی نمونه</h4>
+                    <pre class="code-block">0 1 1 2 3 5 8 13</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>قالب شروع</h2>
+            <p>می‌تونی با این قالب شروع کنی و ادامه‌اش بدی:</p>
+            <pre class="code-block">#include <stdio.h>
+
+int main() {
+    int n, a = 0, b = 1, next;
+    scanf("%d", &n);
+
+    // ادامه‌ی کد خودت رو اینجا بنویس
+
+    return 0;
+}
+</pre>
+        </div>
+
+        <div class="section-card">
+            <h2>راهنمایی‌ها</h2>
+                <details class="hint-item"><summary>راهنمایی 1</summary><p>دو متغیر a و b برای نگه‌داشتن دو جمله‌ی آخر کافیست</p></details>
+                <details class="hint-item"><summary>راهنمایی 2</summary><p>با یک متغیر موقت مقادیر a و b را در هر مرحله جابه‌جا کن</p></details>
+        </div>
+
+        <div class="section-card">
+            <h2>چالش جایزه (اختیاری)</h2>
+            <p class="bonus-box">نسخه‌ی بازگشتی (recursive) هم بنویس و با استفاده از clock() سرعت دو روش را مقایسه کن.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>ارسال نتیجه</h2>
+            <p>
+                کد یا فایل خروجی چالش رو حل کن، سپس لینک یا توضیح کار خودت رو برای ما
+                در بخش پیام صفحه‌ی اصلی ارسال کن تا بررسی کنیم و بازخورد بدیم.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary" href="../../index.html#send-comment">ارسال نتیجه</a>
+                <a class="btn btn-secondary" href="../challc.html">بازگشت به چالش‌های زبان سی</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="../help.html" class="helpus">حمایت از ما</a>
+    <a href="../challanges.html" class="challanges">چالش ها</a>
+</body>
+</html>

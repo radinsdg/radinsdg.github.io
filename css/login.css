@@ -1,0 +1,124 @@
+/* Login Page Stylesheet — هماهنگ با پالت اصلی سایت */
+
+@font-face{
+    font-family: yekan;
+    src: url("../fonts/Yekan.ttf");
+}
+
+*{
+    direction: ltr;
+    box-sizing: border-box;
+    font-family: yekan;
+}
+
+body{
+    font-size: 18px;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-45deg, #1a1268, #2c1fb0, #2b8fd6, #1a1268);
+    background-size: 400% 400%;
+    animation: bgMove 12s ease infinite;
+}
+
+.container{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    height: auto;
+    border-radius: 24px;
+    padding: 30px;
+    color: white;
+    display: grid;
+    justify-self: center;
+    width: 60%;
+    max-width: 420px;
+    margin: 50px auto;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #ffb703;
+    letter-spacing: 1px;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label{
+    color: #e7e6ff;
+    font-weight: 600;
+}
+
+input{
+    padding: 10px;
+    border: 2px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.92);
+    border-radius: 14px;
+    transition: all 200ms ease;
+    width: 100%;
+    color: #1c1c28;
+}
+
+input::placeholder{
+    color: #8a8a9c;
+}
+
+input:focus{
+    transform: scale(1.03);
+    border-color: #ffb703;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 183, 3, 0.35);
+}
+
+h4{
+    color: #ffe08a;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 3px;
+    min-height: 1.2em;
+}
+
+#login-btn{
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff8c00, #ffb703);
+    border: none;
+    padding: 12px 40px;
+    border-radius: 999px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #241a00;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: all 0.2s ease;
+}
+
+#login-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 140, 0, 0.4);
+}
+
+@keyframes bgMove {
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 85%;
+    }
+}

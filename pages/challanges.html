@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>چالش ها | آموزش برنامه نویسی رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../index.html">خانه</a>
+            <a href="courses.html">دوره ها</a>
+            <a href="downloads.html">دانلود ها</a>
+            <a href="login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>چالش های برنامه نویسی</h1>
+            <p>
+                در اینجا چالش هایی از برنامه نویسی زبان های مختلف قرار میدهیم که
+                میتوانید نتایج آنها را آپلود کنید تا بعدا داشته باشید
+            </p>
+        </div>
+    </header>
+    <main>
+        <h2>
+            لطفا موضوع مورد نظر خود را انتخاب کنید
+        </h2>
+        <details id="chall-subjects">
+            <summary>موضوعات موجود</summary>
+            <option onclick="python()">پایتون</option>
+            <option onclick="web()">طراحی وب</option>
+            <option onclick="c()">زبان سی</option>
+            <option onclick="scratch()">اسکرچ</option>
+            <option onclick="js()">جاوا اسکریپت</option>
+        </details>
+        <h3 style="margin-top: 20px" align="center">توضیحات</h3>
+        <p>
+            در این قسمت با کلیک بر روی هم موضوع به صفحه مختص آن هدایت میشوی تا انجا
+            چالش مخصوص خود را انتخاب کرده و انجام داد
+        </p>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="help.html" class="helpus">حمایت از ما</a>
+    <script src="../js/challways.js"></script>
+</body>
+</html>

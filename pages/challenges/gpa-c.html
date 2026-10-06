@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>محاسبه معدل با آرایه در C | چالش های زبان سی | رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../../index.html">خانه</a>
+            <a href="../courses.html">دوره ها</a>
+            <a href="../downloads.html">دانلود ها</a>
+            <a href="../login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>محاسبه معدل با آرایه در C</h1>
+        </div>
+    </header>
+    <main>
+        <p class="breadcrumb">
+            <a href="../challanges.html">چالش ها</a> /
+            <a href="../challc.html">زبان سی</a> /
+            محاسبه معدل با آرایه در C
+        </p>
+
+        <div class="chall-hero">
+            <h1>محاسبه معدل با آرایه در C</h1>
+            <div class="badges">
+                <span class="badge badge-cat">زبان سی</span>
+                <span class="badge badge-diff-medium">سطح: متوسط</span>
+            </div>
+            <p>برنامه‌ای بنویس که تعداد دروس را بگیرد، نمرات را داخل یک آرایه ذخیره کند و معدل را با استفاده از یک تابع جداگانه محاسبه کند.</p>
+            <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">آرایه</span>
+            <span class="tag">تابع</span>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>هدف از این چالش</h2>
+            <ul class="obj-list">
+                <li>کار با آرایه‌ها</li>
+                <li>تعریف و فراخوانی تابع</li>
+                <li>حلقه‌ی for</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>شرایط و ملزومات</h2>
+            <ul class="req-list">
+                <li>گرفتن تعداد دروس و نمرات در آرایه</li>
+                <li>نوشتن تابع average() که میانگین آرایه را برمی‌گرداند</li>
+                <li>چاپ معدل با دو رقم اعشار</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>نمونه ورودی و خروجی</h2>
+            <div class="io-grid">
+                <div>
+                    <h4>ورودی نمونه</h4>
+                    <pre class="code-block">3
+18 15.5 19</pre>
+                </div>
+                <div>
+                    <h4>خروجی نمونه</h4>
+                    <pre class="code-block">معدل شما: 17.50</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>قالب شروع</h2>
+            <p>می‌تونی با این قالب شروع کنی و ادامه‌اش بدی:</p>
+            <pre class="code-block">#include <stdio.h>
+
+float average(float scores[], int n) {
+    // ادامه‌ی کد خودت رو اینجا بنویس
+}
+
+int main() {
+    int n;
+    float scores[50];
+
+    // ادامه‌ی کد خودت رو اینجا بنویس
+
+    return 0;
+}
+</pre>
+        </div>
+
+        <div class="section-card">
+            <h2>راهنمایی‌ها</h2>
+                <details class="hint-item"><summary>راهنمایی 1</summary><p>اندازه‌ی آرایه را از قبل با یک عدد ثابت حداکثر (مثلاً 50) در نظر بگیر</p></details>
+                <details class="hint-item"><summary>راهنمایی 2</summary><p>تابع average باید آرایه و تعداد عناصر را به عنوان پارامتر بگیرد</p></details>
+        </div>
+
+        <div class="section-card">
+            <h2>چالش جایزه (اختیاری)</h2>
+            <p class="bonus-box">تابعی بنویس که بیشترین و کمترین نمره را هم پیدا کند و چاپ کند.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>ارسال نتیجه</h2>
+            <p>
+                کد یا فایل خروجی چالش رو حل کن، سپس لینک یا توضیح کار خودت رو برای ما
+                در بخش پیام صفحه‌ی اصلی ارسال کن تا بررسی کنیم و بازخورد بدیم.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary" href="../../index.html#send-comment">ارسال نتیجه</a>
+                <a class="btn btn-secondary" href="../challc.html">بازگشت به چالش‌های زبان سی</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="../help.html" class="helpus">حمایت از ما</a>
+    <a href="../challanges.html" class="challanges">چالش ها</a>
+</body>
+</html>

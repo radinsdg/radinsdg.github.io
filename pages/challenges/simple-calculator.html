@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="../../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>ماشین حساب ساده کنسولی | چالش های پایتون | رادین</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../../index.html">خانه</a>
+            <a href="../courses.html">دوره ها</a>
+            <a href="../downloads.html">دانلود ها</a>
+            <a href="../login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div class="description">
+            <h1>ماشین حساب ساده کنسولی</h1>
+        </div>
+    </header>
+    <main>
+        <p class="breadcrumb">
+            <a href="../challanges.html">چالش ها</a> /
+            <a href="../challpy.html">پایتون</a> /
+            ماشین حساب ساده کنسولی
+        </p>
+
+        <div class="chall-hero">
+            <h1>ماشین حساب ساده کنسولی</h1>
+            <div class="badges">
+                <span class="badge badge-cat">پایتون</span>
+                <span class="badge badge-diff-easy">سطح: ساده</span>
+            </div>
+            <p>یک برنامه کنسولی در پایتون بنویس که از کاربر دو عدد و یک عملگر (جمع، تفریق، ضرب، تقسیم) بگیرد و نتیجه را نمایش دهد.</p>
+            <div class="tags">
+            <span class="tag">پایتون</span>
+            <span class="tag">ورودی/خروجی</span>
+            <span class="tag">شرط</span>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>هدف از این چالش</h2>
+            <ul class="obj-list">
+                <li>کار با ورودی input() و تبدیل نوع داده</li>
+                <li>استفاده از دستور شرطی if/elif/else</li>
+                <li>مدیریت خطای تقسیم بر صفر</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>شرایط و ملزومات</h2>
+            <ul class="req-list">
+                <li>گرفتن دو عدد اعشاری از کاربر</li>
+                <li>گرفتن عملگر به صورت متن (+ - * /)</li>
+                <li>نمایش نتیجه با پیام مناسب</li>
+                <li>در صورت تقسیم بر صفر پیام خطا نمایش داده شود</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>نمونه ورودی و خروجی</h2>
+            <div class="io-grid">
+                <div>
+                    <h4>ورودی نمونه</h4>
+                    <pre class="code-block">عدد اول: 12
+عدد دوم: 4
+عملگر: /</pre>
+                </div>
+                <div>
+                    <h4>خروجی نمونه</h4>
+                    <pre class="code-block">نتیجه: 3.0</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>قالب شروع</h2>
+            <p>می‌تونی با این قالب شروع کنی و ادامه‌اش بدی:</p>
+            <pre class="code-block">num1 = float(input("عدد اول: "))
+num2 = float(input("عدد دوم: "))
+op = input("عملگر (+ - * /): ")
+
+# ادامه‌ی کد خودت رو اینجا بنویس
+</pre>
+        </div>
+
+        <div class="section-card">
+            <h2>راهنمایی‌ها</h2>
+                <details class="hint-item"><summary>راهنمایی 1</summary><p>از تابع float() برای تبدیل ورودی به عدد استفاده کن</p></details>
+                <details class="hint-item"><summary>راهنمایی 2</summary><p>عملگر تقسیم را قبل از هر عملگر دیگه بررسی و از صفر بودن مخرج مطمئن شو</p></details>
+        </div>
+
+        <div class="section-card">
+            <h2>چالش جایزه (اختیاری)</h2>
+            <p class="bonus-box">برنامه را طوری تغییر بده که بعد از هر محاسبه بپرسد آیا کاربر می‌خواهد دوباره حساب کند یا نه (حلقه‌ی تکرار).</p>
+        </div>
+
+        <div class="section-card">
+            <h2>ارسال نتیجه</h2>
+            <p>
+                کد یا فایل خروجی چالش رو حل کن، سپس لینک یا توضیح کار خودت رو برای ما
+                در بخش پیام صفحه‌ی اصلی ارسال کن تا بررسی کنیم و بازخورد بدیم.
+            </p>
+            <div class="cta-buttons">
+                <a class="btn btn-primary" href="../../index.html#send-comment">ارسال نتیجه</a>
+                <a class="btn btn-secondary" href="../challpy.html">بازگشت به چالش‌های پایتون</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آکادمی آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="../help.html" class="helpus">حمایت از ما</a>
+    <a href="../challanges.html" class="challanges">چالش ها</a>
+</body>
+</html>

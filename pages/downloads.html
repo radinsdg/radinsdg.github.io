@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <script src="../js/theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="../radinsdg-192.png">
+    <link rel="apple-touch-icon" href="../radinsdg-192.png">
+    <meta name="theme-color" content="#ff8c00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Radinsdg">
+    <title>دانلود برنامه Radinsdg برای اندروید</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <header>
+        <nav>
+            <a href="../index.html">خانه</a>
+            <a href="courses.html">دوره ها</a>
+            <a href="downloads.html" class="action">دانلود ها</a>
+            <a href="login.html" class="lg">ثبت نام / ورود</a>
+        </nav>
+        <div>
+            <h1>دانلود اپلیکیشن Radinsdg</h1>
+            <p>
+                دانلود اپلیکیشن رادین برای یادگیری و تعامل بهتر با کاربران،<br>
+                دارای پسوند apk برای اندرویدی ها،<br> در حال ساخت اپلیکیشن برای کامپیوتر هایی ویندوزی
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="downloads-div">
+            <div class="other-way">
+                <h2>دانلود از فروشگاه <span>(در حال راه اندازی)</span></h2>
+                <div class="other-box">
+                    <a id="cafebazaar" onclick="goToBazaarDown()">کافه بازار</a>
+                    <a id="mayket" onclick="goToMayketDown()">مایکت</a>
+                    <a id="aptoide" onclick="goToAptoideDown()">اپتودی</a>
+                    <a id="googleplay" onclick="goToGooglePlayDown()">گوگل پلی</a>
+                </div>
+            </div>
+            <div class="direct-download">
+                <h2>دانلود مستقیم</h2>
+                <a href="https://radinsdg-apk.radinsdg.workers.dev/Radinsdg.apk" target="_blank">دانلود مستقیم</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        آموزش برنامه نویسی رادین تقدیم میکند<br>
+        &copy; 2026 Radinsdg
+    </footer>
+    <a href="pages/help.html" class="helpus">حمایت از ما</a>
+    <script src="../js/goToDownloadPages.js"></script>
+    <script src="../js/isLoggedIn.js"></script>
+</body>
+</html>
