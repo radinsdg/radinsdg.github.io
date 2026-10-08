@@ -8,5 +8,5 @@ function pyCourse() {
 }
 
 function htmlCourse() {
-    alert("این بخش هنوز اضافه نشده است در صورت اضافه شدن به شما خبر میدهیم")
+    open("https://www.aparat.com/playlist/25125749", "_blank")
 }
