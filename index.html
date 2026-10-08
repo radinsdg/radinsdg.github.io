@@ -85,16 +85,27 @@
             </table>
         </div>
         <h3 align="center" style="margin: 20px;">پیام خود را برای ما ارسال کنید</h3>
-        <div class="send-comment" id="send-comment">
-            <label>نام و نام خانوادگی</label>
-            <input type="text" class="fullname" placeholder="محمد تقوی" required>
-            <label>شماره تلفن</label>
-            <input required type="number" class="phonenumber" placeholder="09324344933">
-            <label>نظر شما</label>
-            <textarea required rows="5" id="message" placeholder="پیام خود را بنویسید ..."></textarea>
-            <button onclick="sendComment()" class="send-comment-btn" type="button">ارسال</button>
-            <h4 class="err-message"></h4>
-        </div>
+<form class="send-comment" id="send-comment" action="https://formsubmit.co/ایمیل‌شما@example.com" method="POST">
+    <label>نام و نام خانوادگی</label>
+    <input type="text" name="name" class="fullname" placeholder="محمد تقوی" required>
+
+    <label>ایمیل شما</label>
+    <input type="email" name="email" class="useremail" placeholder="example@mail.com" required>
+
+    <label>شماره تلفن</label>
+    <input type="number" name="phone" class="phonenumber" placeholder="09324344933" required>
+
+    <label>نظر شما</label>
+    <textarea name="message" required rows="5" id="message" placeholder="پیام خود را بنویسید ..."></textarea>
+
+    <input type="hidden" name="_next" value="thanks.html">
+    <input type="hidden" name="_subject" value="پیام جدید از سایت رادین">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <button type="submit" class="send-comment-btn">ارسال</button>
+    <h4 class="err-message"></h4>
+</form>
     </main>
     <footer>
         آکادمی آموزش برنامه نویسی رادین《 Radinsdg LC 》تقدیم میکند<br>
